@@ -22,86 +22,98 @@
     </header>
     <main>
         <section class="container">
-            <div class="row gap-3 d-flex">
-                <div class="col">
+            <div class="d-flex mx-2 gap-4">
+                <div class="col-6">
                     <img class="img-fluid rounded-1" src="images/money.jpg" alt="money">
                 </div>
-                <div class="col">
-                    <div class="row g-3 align-items-center bg-light rounded-1">
-                        <div class="">
-                            <h3 class="text-center">Income</h3>
-                            <div class="mb-3 row">
-                                <label class="col-sm-2 col-form-label">Income:</label>
-                                <div class="col-sm-10">
+                <div class="col-6 bg-light rounded-1 d-flex align-items-center justify-content-center">
+                    <div class=" ">
+                        <div class="align-items-center justify-content-center">
+                            <h3 class="my-3 text-center">Income</h3>
+                            <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
+                                <label class="col-sm-4">Income:</label>
+                                <div class="col-sm-8">
                                     <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
                                         class="form-control" id="income-input">
                                 </div>
                             </div>
-                        </div>
-                        <h3 class="text-center">Expenses</h3>
-                        <div class="col-auto align-items-center">
-                            <div class="row">
-                                <div class="mb-3 row">
-                                    <label class="col-sm-2 col-form-label">Food:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
-                                            class="form-control" id="food-input">
-                                    </div>
+                            <h3 class="my-3 text-center">Expenses</h3>
+                            <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
+                                <label class="col-sm-4">Food:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
+                                        class="form-control" id="food-input">
                                 </div>
                             </div>
-                            <div class="mb-3 row">
-                                <label class="col-sm-2 col-form-label">Rent:</label>
-                                <div class="col-sm-10">
+                            <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
+                                <label class="col-sm-4">Rent:</label>
+                                <div class="col-sm-8">
                                     <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
                                         class="form-control" id="rent-input">
                                 </div>
                             </div>
-                            <div class="mb-3 row">
-                                <label class="col-sm-2 col-form-label">Clothes: </label>
-                                <div class="col-sm-10">
+                            <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
+                                <label class="col-sm-4">Clothes: </label>
+                                <div class="col-sm-8">
                                     <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
                                         class="form-control" id="clothes-input">
                                 </div>
                             </div>
-                            <button onclick="expenseCalBtn()"
-                                class="my-3 px-5 bg-primary rounded-2 text-white">Calculate</button>
+                            <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
+
+                                <button onclick="expenseCalBtn()"
+                                    class="my-3 px-5 bg-primary rounded-2 text-white">Calculate</button>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <h3 class="text-center">Total Expeses:<span id="total-expense">00</span></h3>
                         </div>
                         <div>
-                            <h3 class="text-center">Total Expeses: <span id="total-expense">00</span></h3>
+                            <h3 class="text-center">Balance:<span id="balance">00</span></h3>
                         </div>
-                        <div>
-                            <h3 class="text-center">Balance: <span id="balance">00</span></h3>
-                        </div>
-                        <div class="col">
-                            <div class="col-6">
-                                <div class="mb-3 row">
-                                    <label id="save-percentage" class="col-sm-2 col-form-label">Save:</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" maxlength="2"
-                                            onkeypress="return event.charCode>=48 && event.charCode<=57"
-                                            class="form-control" id="save-input">
-                                    </div>
-                                    <h4 class="col-sm-2">%</h4>
-                                    <button onclick="saving()"
-                                        class=" col-sm-4 my-3 px-5 bg-primary rounded-2 text-white">Save</button>
+                        <div class="col d-flex mb-5">
+                            <div class="col-6 d-flex align-items-center justify-content-center">
+                                <div><label id="save-percentage" class="col-sm-2 col-form-label mx-3">Save: </label>
                                 </div>
-                            </div>
-                            <div class="col-6">
+                                <div class="col-sm-4">
+                                    <input type="text" maxlength="2"
+                                        onkeypress="return event.charCode>=48 && event.charCode<=57"
+                                        class="form-control" id="save-input">
+                                </div>
+                                <div>
+                                    <h5 class="mx-3 mt-0 text-center">%</h5>
+                                </div>
 
                             </div>
+                            <div class="col-6 d-flex align-items-center justify-content-start">
+                                <button onclick="saving()"
+                                    class="my-3 px-3 bg-primary rounded-3 text-white">Save:</button>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-center">Saving Amount: <span id="saving-amount">00</span></h3>
+                        <div class="my-2">
+                            <h3 class="text-center ">Saving Amount:<span id="saving-amount">00</span></h3>
                         </div>
-                        <div>
-                            <h3 class="text-center">Remaining Balance: <span id="remaining-balance">00</span></h3>
+                        <div class="my-2">
+                            <h3 class="text-center ">Remaining Balance:<span id="remaining-balance">00</span></h3>
                         </div>
-
                     </div>
+
+
                 </div>
+            </div>
+
+
+
             </div>
         </section>
     </main>
+    <footer>
+        <div>
+            <h3 class="my-5 text-center">Copyright@2022</h3>
+        </div>
+    </footer>
     <!-- Custom JS file -->
     <script src="js/app.js"></script>
     <!-- bootstap JS -->
