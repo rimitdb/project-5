@@ -1,0 +1,24 @@
+body{
+    font-family: 'Abril Fatface', cursive;
+}
+h1{
+    color: #648C0B;
+}
+h3, h4 {
+    color: #229954;
+}
+
+h5{
+    color: #648C0B;
+}
+span{
+    color:   #e74c3c;
+}
+
+label{
+    color: #a569bd;
+}
+
+input{
+    color: #e74c3c;
+}

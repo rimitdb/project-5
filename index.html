@@ -13,6 +13,10 @@
     <!-- fav Icon link -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <title>Project-5</title>
 </head>
 
@@ -29,32 +33,32 @@
                 <div class="col-6 bg-light rounded-1 d-flex align-items-center justify-content-center">
                     <div class=" ">
                         <div class="align-items-center justify-content-center">
-                            <h3 class="my-3 text-center">Income</h3>
+                            <h3 class="text-center my-3">Income</h3>
                             <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
-                                <label class="col-sm-4">Income:</label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-2">Income:</label>
+                                <div class="col-sm-10">
                                     <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
                                         class="form-control" id="income-input">
                                 </div>
                             </div>
                             <h3 class="my-3 text-center">Expenses</h3>
                             <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
-                                <label class="col-sm-4">Food:</label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-2">Food:</label>
+                                <div class="col-sm-10">
                                     <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
                                         class="form-control" id="food-input">
                                 </div>
                             </div>
                             <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
-                                <label class="col-sm-4">Rent:</label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-2">Rent:</label>
+                                <div class="col-sm-10">
                                     <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
                                         class="form-control" id="rent-input">
                                 </div>
                             </div>
                             <div class="mb-2 d-flex mx-2 align-items-center justify-content-center">
-                                <label class="col-sm-4">Clothes: </label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-2">Clothes:</label>
+                                <div class="col-sm-10">
                                     <input type="text" onkeypress="return event.charCode>=48 && event.charCode<=57"
                                         class="form-control" id="clothes-input">
                                 </div>
@@ -68,10 +72,10 @@
 
 
                         <div>
-                            <h3 class="text-center">Total Expeses:<span id="total-expense">00</span></h3>
+                            <h4 class="text-center my-5">Total Expeses: <span id="total-expense">00</span></h4>
                         </div>
                         <div>
-                            <h3 class="text-center">Balance:<span id="balance">00</span></h3>
+                            <h4 class="text-center my-5">Balance: <span id="balance">00</span></h4>
                         </div>
                         <div class="col d-flex mb-5">
                             <div class="col-6 d-flex align-items-center justify-content-center">
@@ -92,26 +96,23 @@
                                     class="my-3 px-3 bg-primary rounded-3 text-white">Save:</button>
                             </div>
                         </div>
-                        <div class="my-2">
-                            <h3 class="text-center ">Saving Amount:<span id="saving-amount">00</span></h3>
+                        <div class="my-5">
+                            <h4 class="text-center ">Saving Amount: <span id="saving-amount">00</span></h4>
                         </div>
-                        <div class="my-2">
-                            <h3 class="text-center ">Remaining Balance:<span id="remaining-balance">00</span></h3>
+                        <div class="my-5">
+                            <h4 class="text-center ">Remaining Balance: <span id="remaining-balance">00</span></h4>
                         </div>
                     </div>
 
 
                 </div>
             </div>
-
-
-
             </div>
         </section>
     </main>
     <footer>
         <div>
-            <h3 class="my-5 text-center">Copyright@2022</h3>
+            <h5 class="my-5 text-center">Iqbal Hossain &copy; 2022, All Right Reserved</h5>
         </div>
     </footer>
     <!-- Custom JS file -->
